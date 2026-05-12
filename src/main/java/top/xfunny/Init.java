@@ -17,6 +17,7 @@ public class Init {
         ItemGroups.init();
         Blocks.init();
         BlockEntityTypes.init();
+        EntityTypes.init();
         LOGGER.info("初始化完成");
     }
 

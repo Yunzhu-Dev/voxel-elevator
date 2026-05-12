@@ -74,7 +74,7 @@ public class CabinTapeMeasure extends Item {
         else if (!nbt.contains(KEY_POS2)) {
             String storedDimension = nbt.getString(KEY_DIMENSION);
 
-            // 【维度检查】确保第二个点和第一个点在同一维度
+            // 确保第二个点和第一个点在同一维度
             if (!currentDimension.equals(storedDimension)) {
                 context.getPlayer().sendMessage(Text.of("§c错误：第二个点必须和第一个点在同一个维度！正在重置选择..."), false);
                 // 重置所有数据
